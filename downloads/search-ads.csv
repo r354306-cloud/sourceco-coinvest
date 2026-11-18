@@ -1,20 +1,20 @@
 campaign,element,text,characters
-Sponsors: equity for a deal,headline,Equity for Your LOI Deal,24
+Sponsors: equity for a deal,headline,Equity for Your Next Deal,25
 Sponsors: equity for a deal,headline,Independent Sponsor Capital,27
-Sponsors: equity for a deal,headline,Close the Equity Gap,20
-Sponsors: equity for a deal,headline,LOI Signed? Equity Still Open?,30
-Sponsors: equity for a deal,headline,Equity Pre-Check Before LOI,27
-Sponsors: equity for a deal,headline,Know Your Equity Before LOI,27
-Sponsors: equity for a deal,headline,First Read in 1 Business Day,28
+Sponsors: equity for a deal,headline,Fill Your Equity Gap,20
+Sponsors: equity for a deal,headline,Offer Signed? Still Short?,26
+Sponsors: equity for a deal,headline,Equity Answer Before You Bid,28
+Sponsors: equity for a deal,headline,Know Your Equity First,22
+Sponsors: equity for a deal,headline,First Answer in 1 Business Day,30
 Sponsors: equity for a deal,headline,No Fee to Sponsors,18
-Sponsors: equity for a deal,headline,One Line on Your Cap Table,26
-Sponsors: equity for a deal,headline,Built by a Former Sponsor,25
+Sponsors: equity for a deal,headline,"One Partner, Not Twenty",23
+Sponsors: equity for a deal,headline,Founded by a Former Sponsor,27
 Sponsors: equity for a deal,headline,SourceCo Co-Invest,18
 Sponsors: equity for a deal,headline,Send Your Deal in 2 Minutes,27
-Sponsors: equity for a deal,description,Under LOI with equity still open? Send the deal once. First read in 1 business day.,83
-Sponsors: equity for a deal,description,Bidding on a deal? Get an indicative equity read in writing before you sign the LOI.,84
-Sponsors: equity for a deal,description,Built by a sponsor who closed $250M+ of his own deals. No fee to sponsors. Confidential.,88
-Sponsors: equity for a deal,description,"One deal room, one sponsor call, one line on your cap table. Stay on diligence.",79
+Sponsors: equity for a deal,description,"Offer signed, still short on equity? Send the deal once. First answer in 1 business day.",88
+Sponsors: equity for a deal,description,Bidding on a deal? Find out in writing how much equity is likely before you make an offer.,90
+Sponsors: equity for a deal,description,"From the SourceCo team. 4,000+ verified buyers and sponsors. No fee to sponsors.",80
+Sponsors: equity for a deal,description,"One private deal room, one call, one partner. You stay focused on closing.",74
 Sponsors: equity for a deal,keyword (exact),independent sponsor capital,
 Sponsors: equity for a deal,keyword (exact),independent sponsor equity,
 Sponsors: equity for a deal,keyword (exact),equity partner for acquisition,
@@ -31,14 +31,14 @@ Sponsors: equity for a deal,negative keyword,real estate,
 Sponsors: equity for a deal,negative keyword,startup,
 Sponsors: equity for a deal,negative keyword,crowdfunding,
 Competitor: CapitalPad searches,headline,Comparing Equity Partners?,26
-Competitor: CapitalPad searches,headline,Equity Pre-Check Before LOI,27
-Competitor: CapitalPad searches,headline,Know Your Equity Before LOI,27
+Competitor: CapitalPad searches,headline,Equity Answer Before You Bid,28
+Competitor: CapitalPad searches,headline,Know Your Equity First,22
 Competitor: CapitalPad searches,headline,No Fee to Sponsors,18
-Competitor: CapitalPad searches,headline,Built by a Former Sponsor,25
+Competitor: CapitalPad searches,headline,Founded by a Former Sponsor,27
 Competitor: CapitalPad searches,headline,SourceCo Co-Invest,18
 Competitor: CapitalPad searches,headline,Deals Sourced Off-Market,24
-Competitor: CapitalPad searches,headline,First Read in 1 Business Day,28
-Competitor: CapitalPad searches,description,"Get an indicative equity read in writing before you bid, on SourceCo marketplace deals.",87
+Competitor: CapitalPad searches,headline,First Answer in 1 Business Day,30
+Competitor: CapitalPad searches,description,Find out in writing how much equity is likely before you bid on a SourceCo deal.,80
 Competitor: CapitalPad searches,description,"From the team behind 22,000+ owner calls and a live deal marketplace. Confidential.",83
 Competitor: CapitalPad searches,description,Ask any equity partner how many deals they funded. Here is our honest answer.,77
 Competitor: CapitalPad searches,keyword (exact),capitalpad,
