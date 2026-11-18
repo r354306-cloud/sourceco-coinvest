@@ -1042,6 +1042,11 @@
     .hstats > div:nth-child(3) { padding-left: 0; border-left: 0; }
   }
   @media (max-width: 640px) { .tg-chip { display: none; } }
+  .art a.btn { color: var(--ink); text-decoration: none; }
+  .nw { white-space: nowrap; }
+  .tg-mnote { display: none; }
+  @media (max-width: 1000px) { .tg-mnote { display: block; grid-column: 1 / -1; font-size: 13px; color: #b9b0a3; margin-top: 2px; } }
+  @media (max-width: 640px) { .tg-bar.gd { font-size: 0; padding: 0; } }
 </style>
 </head>
 <body>
@@ -1056,7 +1061,7 @@
   <h1>How independent sponsors raise equity in 2026</h1>
   <p class="dek">Where the money comes from, when sponsors raise it, what it costs and why deals still break. A plain-English guide built on the latest survey data.</p>
   <div class="meta"><img src="data:image/png;base64,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" alt=""><span><b>SourceCo research</b> &middot; Updated November 2026 </span></div>
-  <div class="tldr"><h4>The short version</h4><ul><li>Family offices are the most common equity source: 62% of sponsors in Citrin Cooperman's 2025 survey, 69% in 2026.</li><li>Most sponsors build relationships before the LOI and raise deal-specific equity after it.</li><li>Typical economics: a 2% closing fee, a management fee near 5% of EBITDA, and carry that reaches 25% or more for most sponsors.</li><li>Financing caused about 11% of broken LOIs in 2025. Diligence problems caused about 47%.</li></ul></div>
+  <div class="tldr"><h4>The short version</h4><ul><li>Family offices are the most common equity source: 62% of sponsors in Citrin Cooperman's 2025 survey, 69% in 2026.</li><li>Most sponsors build relationships before they make an offer, then raise the money for that deal after the offer is signed.</li><li>Typical economics: a 2% closing fee, a yearly fee near 5% of profit (EBITDA), and a share of the gains (carry) that reaches 25% or more for most sponsors.</li><li>Financing caused about 11% of deals that fell apart in 2025. Problems found in the buyer's checks caused about 47%.</li></ul></div>
   <nav class="toc2"><b>In this guide</b><a href="#where">Where the equity comes from</a><a href="#when">When sponsors raise it</a><a href="#cost">What it costs</a><a href="#break">How long it takes, and why deals break</a><a href="#sellers">What sellers want to see</a><a href="#checklist">A checklist before you sign</a></nav>
   
   <h2 id="where">Where the equity comes from</h2>
@@ -1064,58 +1069,58 @@
   <div class="stat">
     <div><div class="n">62%</div><div class="l">use family offices</div><div class="s">Citrin Cooperman 2025</div></div>
     <div><div class="n">55%</div><div class="l">use high net worth individuals</div><div class="s">Citrin Cooperman 2025</div></div>
-    <div><div class="n">53%</div><div class="l">use SBIC funds</div><div class="s">Citrin Cooperman 2025</div></div>
+    <div><div class="n">53%</div><div class="l">use SBICs (government-backed funds)</div><div class="s">Citrin Cooperman 2025</div></div>
   </div>
-  <p>Mezzanine funds that also take equity were next at 45%. When it comes to who leads the deal, family offices led most often (22%), followed by SBICs (18%). And 15% of sponsors said they had no lead investor at all, which means they assembled the whole check from smaller pieces (<a href="https://www.citrincooperman.com/In-Focus-Resource-Center/Uncharted-No-More-Capital-Sources-in-the-Independent-Sponsor-Sector">Citrin Cooperman</a>).</p>
+  <p>Mezzanine funds, which lend money and take a small piece of ownership, were next at 45%. When it comes to who leads the deal, family offices led most often (22%), followed by SBICs (18%). And 15% of sponsors said they had no lead investor at all, which means they assembled the whole check from smaller pieces (<a href="https://www.citrincooperman.com/In-Focus-Resource-Center/Uncharted-No-More-Capital-Sources-in-the-Independent-Sponsor-Sector">Citrin Cooperman</a>).</p>
   <p>The 2026 edition, with 187 respondents, puts family office use at 69% (<a href="https://www.citrincooperman.com/Focused-Programs/Independent-Sponsor-Report">Citrin Cooperman 2026</a>). Smaller-sponsor samples look different: in Axial's 2025 survey of 83 sponsors, 85% used family offices and 81% used wealthy individuals (<a href="https://axial.net/forum/axials-2025-independent-sponsor-report/">Axial</a>). The takeaway is that most sponsors stitch together more than one source, and smaller sponsors lean harder on individuals.</p>
 
   <h2 id="when">When sponsors raise it</h2>
-  <p>The common advice is to line up capital before you sign. The practice is more mixed. Good sponsors build relationships with capital partners before an LOI, then raise the deal-specific equity after it. One family office investor said about 70% of the deals it sees arrive after the LOI is signed (<a href="https://iglobalforum.com/insights/family-offices-and-independent-sponsors.html">iGlobal Forum</a>).</p>
-  <p>Support letters show the same shift. In Axial's survey, the share of sponsors providing a capital support letter before the LOI fell from 68.2% in 2023 to 55.4% in 2025, while the share providing one after the LOI rose from 18.2% to 39.2% (<a href="https://axial.net/forum/axials-2025-independent-sponsor-report/">Axial</a>).</p>
-  <div class="callout">The risk is not raising after the LOI. It is starting the raise late in exclusivity with no lead and a large gap. That is where deals stall.</div>
+  <p>The common advice is to line up capital before you sign. The practice is more mixed. Good sponsors build relationships with investors before they make an offer, then raise the money for that deal after it is signed. One family office investor said about 70% of the deals it sees arrive after the offer is signed (<a href="https://iglobalforum.com/insights/family-offices-and-independent-sponsors.html">iGlobal Forum</a>).</p>
+  <p>Support letters show the same shift. In Axial's survey, the share of sponsors providing a support letter before the offer fell from 68.2% in 2023 to 55.4% in 2025, while the share providing one after the offer rose from 18.2% to 39.2% (<a href="https://axial.net/forum/axials-2025-independent-sponsor-report/">Axial</a>).</p>
+  <div class="callout">The risk is not raising after the offer. It is starting late in the exclusive window, with no lead investor and a large gap. That is where deals stall.</div>
 
   <h2 id="cost">What it costs: sponsor economics</h2>
   <p>Sponsor economics have moved in sponsors' favor over the last few years. Citrin Cooperman's 2025 data (<a href="https://www.citrincooperman.com/In-Focus-Resource-Center/Uncharted-No-More-Fees-and-Carried-Interest-in-the-Independent-Sponsor-Sector">source</a>):</p>
   <table class="t"><thead><tr><th>Term</th><th>What is most common</th></tr></thead><tbody>
-    <tr><td>Closing fee</td><td>2% of transaction value is the most common rate (56%). Only 3% of sponsors take no closing fee.</td></tr>
-    <tr><td>Management fee</td><td>About half use a percent of EBITDA with a floor and cap. Of those, 69% use 5% of EBITDA.</td></tr>
-    <tr><td>Carried interest</td><td>64% reach a maximum carry of 25% or more, usually in tiers.</td></tr>
-    <tr><td>Hurdle</td><td>63% use a preferred return of 8% to 9.9%. Half measure hurdles by multiple of money, a fifth by IRR.</td></tr>
-    <tr><td>Catch-up</td><td>74% get a full catch-up once the hurdle is met.</td></tr>
+    <tr><td>Fee at closing</td><td>2% of the purchase price is the most common rate (56%). Only 3% of sponsors take no closing fee.</td></tr>
+    <tr><td>Yearly fee</td><td>About half charge a percent of yearly profit (EBITDA), with a floor and a cap. Of those, 69% use 5%.</td></tr>
+    <tr><td>Share of gains (carry)</td><td>64% reach a top share of 25% or more, usually in steps as returns rise.</td></tr>
+    <tr><td>Minimum return (hurdle)</td><td>63% set it at 8% to 9.9% a year. Half measure it as a multiple of the money invested, a fifth as a yearly return (IRR).</td></tr>
+    <tr><td>Catch-up</td><td>74% get a full catch-up: once investors hit their minimum return, the sponsor gets their full share of the gains.</td></tr>
   </tbody></table>
   <p>Capital partners care about these terms, but practitioners keep saying the same thing: sponsors who pick flexible, trusted partners do better than sponsors who chase the best economics (<a href="https://mcguirewoods.com/client-resources/alerts/2025/12/key-takeaways-from-mcguirewoods-2025-independent-sponsor-conference/">McGuireWoods 2025 conference takeaways</a>).</p>
 
   <h2 id="break">How long it takes, and why deals break</h2>
-  <p>Nearly 73% of sell-side advisors in Axial's survey said independent sponsors take longer to close than PE funds, mainly because the equity is assembled after the LOI (<a href="https://axial.net/forum/axials-2025-independent-sponsor-report/">Axial</a>). That matters, because exclusivity usually runs 60 to 90 days.</p>
-  <p>But money is not the main reason deals die. Axial looked at 75 lower middle market LOIs that broke in 2025 (<a href="https://www.axial.net/forum/dead-deal-report-unpacking-2025s-broken-lois/">Axial Dead Deal Report</a>):</p>
-  <table class="t"><thead><tr><th>Reason the LOI broke</th><th>Share</th></tr></thead><tbody>
-    <tr><td>Diligence findings (other than QoE)</td><td>25.3%</td></tr>
-    <tr><td>Quality of earnings found lower EBITDA</td><td>21.3%</td></tr>
-    <tr><td>Renegotiation or re-trade</td><td>14.7%</td></tr>
+  <p>Nearly 73% of sell-side advisors in Axial's survey said independent sponsors take longer to close than PE funds, mainly because the money comes together after the offer is signed (<a href="https://axial.net/forum/axials-2025-independent-sponsor-report/">Axial</a>). That matters, because sellers usually give a buyer only 60 to 90 days of exclusivity to close.</p>
+  <p>But money is not the main reason deals die. Axial looked at 75 small-company deals that fell apart after a signed offer in 2025 (<a href="https://www.axial.net/forum/dead-deal-report-unpacking-2025s-broken-lois/">Axial Dead Deal Report</a>):</p>
+  <table class="t"><thead><tr><th>Why the deal fell apart</th><th>Share</th></tr></thead><tbody>
+    <tr><td>Problems found in the buyer's checks</td><td>25.3%</td></tr>
+    <tr><td>An earnings audit found lower profit</td><td>21.3%</td></tr>
+    <tr><td>Price renegotiated</td><td>14.7%</td></tr>
     <tr><td>Seller decided not to sell</td><td>13.3%</td></tr>
     <tr><td>Financing or capital</td><td>10.7%</td></tr>
     <tr><td>Business underperformed</td><td>8.0%</td></tr>
   </tbody></table>
-  <p>Financing was behind 21.3% of broken LOIs in 2023, so the share moves with the credit cycle. When an independent sponsor's LOI did break in 2025, it had held the company in exclusivity for 129 days on average, longer than any other buyer type (<a href="https://www.axial.net/forum/dead-deal-report-unpacking-2025s-broken-lois/">Axial</a>).</p>
+  <p>Financing was behind 21.3% of failed deals in 2023, so the share moves with the credit cycle. When an independent sponsor's deal did fall apart in 2025, it had tied up the company for 129 days on average, longer than any other buyer type (<a href="https://www.axial.net/forum/dead-deal-report-unpacking-2025s-broken-lois/">Axial</a>).</p>
 
   <h2 id="sellers">What sellers want to see</h2>
-  <p>Sellers do not automatically discount sponsor bids. In Axial's survey, 35% of advisors said sponsor bids are typically priced like PE bids, and 47% said a sponsor can sometimes be the better buyer (<a href="https://axial.net/forum/axials-2025-independent-sponsor-report/">Axial</a>). What sellers want is evidence. Reed Smith's 2026 guidance tells sellers to ask a fundless sponsor (<a href="https://www.reedsmith.com/articles/fundless-sponsors-in-2026-practical-considerations/">Reed Smith</a>):</p>
-  <ol class="b"><li>How much capital is committed or underwritten?</li><li>Who are the investors?</li><li>What approval rights do they hold?</li><li>What is the status of the debt?</li><li>What happens if an investor withdraws?</li></ol>
-  <p>The same guidance suggests sellers tie exclusivity to evidence of a credible bid and an indicative financing package. Sponsors who can answer these questions early look like funded buyers.</p>
+  <p>Sellers do not automatically discount sponsor bids. In Axial's survey, 35% of advisors said sponsor bids are typically priced like PE bids, and 47% said a sponsor can sometimes be the better buyer (<a href="https://axial.net/forum/axials-2025-independent-sponsor-report/">Axial</a>). What sellers want is evidence. Reed Smith's 2026 guidance tells sellers to ask a sponsor without a fund (<a href="https://www.reedsmith.com/articles/fundless-sponsors-in-2026-practical-considerations/">Reed Smith</a>):</p>
+  <ol class="b"><li>How much money is actually committed?</li><li>Who are the investors?</li><li>What say do they get in decisions?</li><li>Where does the bank loan stand?</li><li>What happens if an investor drops out?</li></ol>
+  <p>The same guidance suggests sellers only grant an exclusive window once a buyer shows a credible bid and a likely financing plan. Sponsors who can answer these questions early look like funded buyers.</p>
 
-  <h2 id="checklist">A checklist before you sign an LOI</h2>
+  <h2 id="checklist">A checklist before you make an offer</h2>
   <ul class="b">
-    <li>Know your likely lead, or have a written indicative range from a capital partner.</li>
+    <li>Know who is likely to lead your equity, or get a written range from an investor.</li>
     <li>Have your own check sized and ready to state. Capital partners expect it.</li>
-    <li>Pressure-test earnings before you sign. Almost half of broken LOIs die in diligence.</li>
-    <li>Set exclusivity to match your real raise timeline, with an extension tied to milestones.</li>
+    <li>Test the earnings before you sign. Almost half of failed deals die in the buyer's checks.</li>
+    <li>Ask for an exclusive window that matches how long your raise will really take, with an extension tied to milestones.</li>
     <li>Prepare answers to the five seller questions above, in writing.</li>
     <li>Know your economics and be ready to explain them. Partners will ask.</li>
   </ul>
 
   
-  <div class="cta2"><h3>Know where your equity is coming from before you sign.</h3>
-    <p>SourceCo's Equity Pre-Check gives sponsors bidding on marketplace deals a written read before the LOI: a sponsor screen, a deal screen, an indicative equity range with conditions, and a decision date. It is not a promise to fund.</p>
+  <div class="cta2"><h3>Know where your equity is coming from before you make an offer.</h3>
+    <p>SourceCo's Equity Pre-Check gives sponsors bidding on marketplace deals a written answer before they make an offer: what we checked about them and the deal, how much equity is likely, what has to be true, and a decision date. It is not a promise to fund.</p>
     <a class="btn arrow" href="sponsors.html?utm_source=guide&amp;utm_medium=organic">See how the Pre-Check works </a></div>
   <div class="srcs"><b>Sources</b><ol><li><a href="https://www.citrincooperman.com/In-Focus-Resource-Center/Uncharted-No-More-Capital-Sources-in-the-Independent-Sponsor-Sector">Citrin Cooperman, capital sources in the independent sponsor sector (2025 survey)</a></li><li><a href="https://www.citrincooperman.com/In-Focus-Resource-Center/Uncharted-No-More-Fees-and-Carried-Interest-in-the-Independent-Sponsor-Sector">Citrin Cooperman, fees and carried interest (2025 survey)</a></li><li><a href="https://www.citrincooperman.com/Focused-Programs/Independent-Sponsor-Report">Citrin Cooperman, 2026 Independent Sponsor Report</a></li><li><a href="https://axial.net/forum/axials-2025-independent-sponsor-report/">Axial, 2025 Independent Sponsor Report</a></li><li><a href="https://www.axial.net/forum/dead-deal-report-unpacking-2025s-broken-lois/">Axial, Dead Deal Report: 2025's broken LOIs</a></li><li><a href="https://iglobalforum.com/insights/family-offices-and-independent-sponsors.html">iGlobal Forum, family offices and independent sponsors (October 2025)</a></li><li><a href="https://mcguirewoods.com/client-resources/alerts/2025/12/key-takeaways-from-mcguirewoods-2025-independent-sponsor-conference/">McGuireWoods, 2025 Independent Sponsor Conference takeaways</a></li><li><a href="https://www.reedsmith.com/articles/fundless-sponsors-in-2026-practical-considerations/">Reed Smith, Fundless sponsors in 2026: practical considerations</a></li></ol></div>
   <p class="note" style="margin-top:24px">Education only. Not investment, legal or tax advice, and not an offer to buy or sell any security.</p>

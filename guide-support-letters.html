@@ -1042,6 +1042,11 @@
     .hstats > div:nth-child(3) { padding-left: 0; border-left: 0; }
   }
   @media (max-width: 640px) { .tg-chip { display: none; } }
+  .art a.btn { color: var(--ink); text-decoration: none; }
+  .nw { white-space: nowrap; }
+  .tg-mnote { display: none; }
+  @media (max-width: 1000px) { .tg-mnote { display: block; grid-column: 1 / -1; font-size: 13px; color: #b9b0a3; margin-top: 2px; } }
+  @media (max-width: 640px) { .tg-bar.gd { font-size: 0; padding: 0; } }
 </style>
 </head>
 <body>
@@ -1056,7 +1061,7 @@
   <h1>Equity support letters: what sellers actually want to see</h1>
   <p class="dek">Why most support letters say very little, how often sellers still ask for them, and what a useful one includes.</p>
   <div class="meta"><img src="data:image/png;base64,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" alt=""><span><b>SourceCo research</b> &middot; Updated November 2026 </span></div>
-  <div class="tldr"><h4>The short version</h4><ul><li>Most support letters are short and non-binding, with no amount, conditions or date.</li><li>Sellers ask for them less often: 38.8% of sponsors were never asked in 2025, up from 26.5% in 2023.</li><li>Sellers' advisors want to know how much is committed, who the investors are, their approval rights and what happens if one withdraws.</li><li>A useful letter includes an amount, conditions, approval rights, a decision date and what is not committed yet.</li></ul></div>
+  <div class="tldr"><h4>The short version</h4><ul><li>Most support letters are short and non-binding, with no amount, conditions or date.</li><li>Sellers ask for them less often: 38.8% of sponsors were never asked in 2025, up from 26.5% in 2023.</li><li>Sellers' advisors want to know how much is committed, who the investors are, what say they get, and what happens if one drops out.</li><li>A useful letter includes an amount, what has to be true, who decides, a decision date and what is not committed yet.</li></ul></div>
   <nav class="toc2"><b>In this guide</b><a href="#what">What a support letter is</a><a href="#ask">How often sellers ask for one</a><a href="#look">What advisors look for</a><a href="#useful">What a useful letter includes</a><a href="#mistakes">Common mistakes</a><a href="#template">A one-page outline</a></nav>
   
   <h2 id="what">What a support letter is</h2>
@@ -1068,13 +1073,13 @@
   <table class="t"><thead><tr><th></th><th>2023</th><th>2025</th></tr></thead><tbody>
     <tr><td>Sponsors asked for a support letter "very often"</td><td>20.4%</td><td>8.8%</td></tr>
     <tr><td>Sponsors never asked for one</td><td>26.5%</td><td>38.8%</td></tr>
-    <tr><td>Sponsors who provide one before the LOI</td><td>68.2%</td><td>55.4%</td></tr>
-    <tr><td>Sponsors who provide one after the LOI</td><td>18.2%</td><td>39.2%</td></tr>
+    <tr><td>Sponsors who provide one before the offer</td><td>68.2%</td><td>55.4%</td></tr>
+    <tr><td>Sponsors who provide one after the offer</td><td>18.2%</td><td>39.2%</td></tr>
   </tbody></table>
   <p>Fewer requests does not mean sellers stopped caring. Advisors still say sponsors take longer to close (nearly 73% in the same survey), and they name pre-sourced financing and proof of an equity partner as what makes a sponsor credible. The likelier reading is that the typical letter stopped telling them much.</p>
 
   <h2 id="look">What sellers' advisors actually look for</h2>
-  <p>Reed Smith's 2026 guidance for sellers facing a fundless sponsor lists the questions to ask (<a href="https://www.reedsmith.com/articles/fundless-sponsors-in-2026-practical-considerations/">Reed Smith</a>): how much capital is committed or underwritten, who the investors are, what approval rights they hold, the status of the debt, and what happens if an investor withdraws. It also says binding equity and debt commitments should be delivered at signing where possible, and that exclusivity can be tied to evidence of a credible bid.</p>
+  <p>Reed Smith's 2026 guidance for sellers facing a sponsor without a fund lists the questions to ask (<a href="https://www.reedsmith.com/articles/fundless-sponsors-in-2026-practical-considerations/">Reed Smith</a>): how much money is actually committed, who the investors are, what say they get in decisions, where the bank loan stands, and what happens if an investor withdraws. It also says binding equity and debt commitments should be delivered at signing where possible, and that sellers can hold back an exclusive window until a buyer shows a credible bid.</p>
   <p>A useful letter answers those questions. A typical one answers none.</p>
 
   <h2 id="useful">What a useful letter includes</h2>
@@ -1082,9 +1087,9 @@
     <li><b>The sponsor.</b> Track record, references checked, and the sponsor's own check in dollars.</li>
     <li><b>The investors.</b> Named, or at least described by type, and whether there is a lead.</li>
     <li><b>An amount.</b> A range is fine. "Interested" is not an amount.</li>
-    <li><b>Conditions.</b> What has to be true for the range to hold, such as a quality of earnings result within a stated band.</li>
-    <li><b>Approval rights.</b> Who decides, and whether any investor can walk after committing.</li>
-    <li><b>A date.</b> When the decision will be made once the LOI is signed.</li>
+    <li><b>What has to be true.</b> The conditions for the range to hold, such as an earnings audit coming in within a stated range.</li>
+    <li><b>Who decides.</b> Who makes the call, and whether any investor can walk away after committing.</li>
+    <li><b>A date.</b> When the decision will be made once the offer is signed.</li>
     <li><b>What is not committed yet.</b> Said plainly, so no one reads more into the letter than it says.</li>
   </ol>
 
@@ -1092,17 +1097,17 @@
   <ul class="b">
     <li>Presenting conversations with investors as committed equity. A seller's banker will find out, and it costs credibility on every later deal.</li>
     <li>A letter from a group that has never funded a deal like this one.</li>
-    <li>No date. A letter without a decision date leaves the seller holding exclusivity open-ended.</li>
+    <li>No date. A letter without a decision date leaves the seller waiting with no end in sight.</li>
     <li>Leaving out the sponsor's own money. Capital partners and sellers both want to see it.</li>
   </ul>
 
   <h2 id="template">A one-page outline</h2>
-  <div class="callout"><b>Equity support, [deal name]</b><br>Sponsor: [firm], [prior deals], own commitment [$]<br>Investors: [lead or type], [others]<br>Indicative equity: [$ range]<br>Conditions: [QoE band, lender term sheet by date, no change to price or structure]<br>Approval: [who decides, investor withdrawal terms]<br>Decision date: [N business days after a signed LOI]<br>Not committed yet: [what remains]</div>
+  <div class="callout"><b>Equity support, [deal name]</b><br>Sponsor: [firm], [prior deals], own commitment [$]<br>Investors: [lead or type], [others]<br>Likely equity: [$ range]<br>What has to be true: [earnings audit range, bank loan terms by date, no change to price or terms]<br>Approval: [who decides, investor withdrawal terms]<br>Decision date: [N business days after the offer is signed]<br>Not committed yet: [what remains]</div>
   <p>This is the structure SourceCo uses for its Equity Pre-Check on marketplace deals.</p>
 
   
-  <div class="cta2"><h3>Know where your equity is coming from before you sign.</h3>
-    <p>SourceCo's Equity Pre-Check gives sponsors bidding on marketplace deals a written read before the LOI: a sponsor screen, a deal screen, an indicative equity range with conditions, and a decision date. It is not a promise to fund.</p>
+  <div class="cta2"><h3>Know where your equity is coming from before you make an offer.</h3>
+    <p>SourceCo's Equity Pre-Check gives sponsors bidding on marketplace deals a written answer before they make an offer: what we checked about them and the deal, how much equity is likely, what has to be true, and a decision date. It is not a promise to fund.</p>
     <a class="btn arrow" href="sponsors.html?utm_source=guide&amp;utm_medium=organic">See how the Pre-Check works </a></div>
   <div class="srcs"><b>Sources</b><ol><li><a href="https://axial.net/forum/axials-2025-independent-sponsor-report/">Axial, 2025 Independent Sponsor Report</a></li><li><a href="https://www.axial.net/forum/axials-2023-independent-sponsor-report-summary-analysis/">Axial, 2023 Independent Sponsor Report summary</a></li><li><a href="https://www.reedsmith.com/articles/fundless-sponsors-in-2026-practical-considerations/">Reed Smith, Fundless sponsors in 2026: practical considerations</a></li><li><a href="https://www.searchfunder.com/post/investor-letter-of-support-template">Searchfunder, investor letter of support template discussion</a></li></ol></div>
   <p class="note" style="margin-top:24px">Education only. Not investment, legal or tax advice, and not an offer to buy or sell any security.</p>

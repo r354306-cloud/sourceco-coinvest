@@ -1042,6 +1042,11 @@
     .hstats > div:nth-child(3) { padding-left: 0; border-left: 0; }
   }
   @media (max-width: 640px) { .tg-chip { display: none; } }
+  .art a.btn { color: var(--ink); text-decoration: none; }
+  .nw { white-space: nowrap; }
+  .tg-mnote { display: none; }
+  @media (max-width: 1000px) { .tg-mnote { display: block; grid-column: 1 / -1; font-size: 13px; color: #b9b0a3; margin-top: 2px; } }
+  @media (max-width: 640px) { .tg-bar.gd { font-size: 0; padding: 0; } }
 </style>
 </head>
 <body>
@@ -1055,9 +1060,9 @@
 <section class="hero"><div class="wrap">
   <div class="grid">
     <div>
-      <div class="pill"><span class="dot"></span><span id="pillText"></span></div>
-      <h1 id="heroH1"></h1>
-      <p class="lede" id="heroLede"></p>
+      <div class="pill"><span class="dot"></span><span id="pillText"><b>For SourceCo marketplace members</b></span></div>
+      <h1 id="heroH1">You found the deal here. <span class="gold">Check your equity here too.</span></h1>
+      <p class="lede" id="heroLede">Every deal on the SourceCo marketplace now has an Equity Pre-Check button. Click it before you make an offer and get a written answer on your equity that you can show the seller.</p>
       <div class="hstats"><div><b>2 min</b><span>To ask</span></div><div><b>1 day</b><span>To a first answer</span></div><div><b>$0</b><span>Cost to members</span></div><div><b>Private</b><span>Seller is not told</span></div></div>
     </div>
     
@@ -1077,7 +1082,7 @@
       <h2>From memo to written Pre-Check in a few days.</h2>
       <ul class="lst" style="list-style:none;padding:0;margin:26px 0 0;display:grid;gap:18px">
         <li style="display:grid;grid-template-columns:34px 1fr;gap:14px"><span class="mav" style="width:30px;height:30px;font-size:13px">1</span><span><b>Click Equity Pre-Check on the memo.</b><br><span style="color:var(--ink-600)">The deal code fills in for you.</span></span></li>
-        <li style="display:grid;grid-template-columns:34px 1fr;gap:14px"><span class="mav" style="width:30px;height:30px;font-size:13px">2</span><span><b>Get a first read in 1 business day.</b><br><span style="color:var(--ink-600)">Yes, no, or the short list of what we still need.</span></span></li>
+        <li style="display:grid;grid-template-columns:34px 1fr;gap:14px"><span class="mav" style="width:30px;height:30px;font-size:13px">2</span><span><b>Get a first answer in 1 business day.</b><br><span style="color:var(--ink-600)">Yes, no, or the short list of what we still need.</span></span></li>
         <li style="display:grid;grid-template-columns:34px 1fr;gap:14px"><span class="mav" style="width:30px;height:30px;font-size:13px">3</span><span><b>Short call, then the written Pre-Check.</b><br><span style="color:var(--ink-600)">What we checked, how much equity is likely, what has to be true, and when we decide.</span></span></li>
         <li style="display:grid;grid-template-columns:34px 1fr;gap:14px"><span class="mav" style="width:30px;height:30px;font-size:13px">4</span><span><b>Bid with it.</b><br><span style="color:var(--ink-600)">Show the seller if you want. Once you sign, we decide by the date on the Pre-Check.</span></span></li>
       </ul>
@@ -1091,8 +1096,8 @@
     <div class="mbig" style="font-size:22px">Commercial HVAC Services</div>
     <div class="msm" style="font-size:14px">Midwest &middot; founder-owned since 1998 &middot; recurring service contracts</div>
     <dl class="kv" style="margin-top:6px"><div><dt>Revenue</dt><dd>$12.5M</dd></div><div><dt>Profit</dt><dd>$2.0M</dd></div><div><dt>Team</dt><dd>80</dd></div><div><dt>Margin</dt><dd>16%</dd></div></dl>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px"><span class="btn ghost small">Request CIM</span><span class="btn small">Equity Pre-Check</span></div>
-    <div class="msm" style="font-size:13px">The Pre-Check button sits next to Request CIM on every memo. Fictional example.</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px"><span class="btn ghost small">Request info</span><span class="btn small">Equity Pre-Check</span></div>
+    <div class="msm" style="font-size:13px">The Pre-Check button sits next to Request info on every memo. Fictional example.</div>
   </div>
 </div></div>
   </div>
@@ -1139,7 +1144,7 @@
 </footer>
 
 <div class="mcta"><a class="btn arrow" href="#apply">Request a Pre-Check </a></div>
-<script>window.PAGE = {"heroes": [{"key": "member", "label": "Check it here too", "pill": "<b>For SourceCo marketplace members</b>", "h1": "You found the deal here. <span class=\"gold\">Check your equity here too.</span>", "lede": "Every deal on the SourceCo marketplace now has an Equity Pre-Check button. Click it before you make an offer and get a written answer on your equity that you can show the seller."}, {"key": "button", "label": "The new button", "pill": "<b>For SourceCo marketplace members</b>", "h1": "There is a new button on every deal memo. <span class=\"gold\">Use it before you bid.</span>", "lede": "Equity Pre-Check: a first answer in [1 business day], then a written view of how much equity is likely, what has to be true and when we would decide."}], "flow": {"steps": [{"q": "Which deal?", "sub": "If you came from a memo, the code is already filled in.", "groups": [{"key": "Bid timing", "label": "When do you plan to bid?", "opts": ["This week", "In 2 to 4 weeks", "Next month", "Not sure yet"]}, {"key": "Equity needed", "label": "Equity you expect to need", "opts": ["Under $500K", "$500K to $1M", "$1M to $2.5M", "Over $2.5M"]}, {"key": "Lead", "label": "Anyone leading the equity yet?", "opts": ["Yes, committed", "Yes, not final", "No lead yet", "I will lead"]}], "fields": [["Deal code", "text", 0, "SC-2025-00", true]]}, {"q": "Where should we reply?", "sub": "Use the email on your marketplace account so we can match it.", "fields": [["First name", "text", 1], ["Last name", "text", 1], ["Firm", "text", 0], ["Email", "email", 1], ["Mobile", "tel", 1]]}], "cta": "Request my Pre-Check", "fine": "Free for members. The seller is not told you asked.", "done": {"title": "Pre-Check requested.", "text": "You will get a first read on fit within [1 business day]. The written Pre-Check follows a short call. It is not a promise to fund.", "next": ["What to have ready", "Your track record, your own check in the deal, and how you would structure it. We already have the company's data from the memo."], "link": ["See what happens next", "thanks-sponsors.html?path=precheck"]}, "branches": {}}, "faq": [["Does it cost anything?", "[No. Free for members, and no fee at closing.]"], ["Will the seller know I asked?", "No. The seller sees a Pre-Check only if you share it."], ["Does asking change how SourceCo treats my bid?", "It should not, and we will say so in writing."], ["Can I use it on more than one deal?", "Yes. Each deal gets its own Pre-Check, because each deal has its own conditions."], ["I already have a lead investor. Is it still useful?", "Often more so. It can fill the rest of the gap, and the written view helps when the seller asks where all your money is coming from."], ["Is it a promise to fund?", "No. It states what we checked and what still has to be true. Investors decide after they review the signed deal."]]};</script>
+<script>window.PAGE = {"heroes": [{"key": "member", "label": "Check it here too", "pill": "<b>For SourceCo marketplace members</b>", "h1": "You found the deal here. <span class=\"gold\">Check your equity here too.</span>", "lede": "Every deal on the SourceCo marketplace now has an Equity Pre-Check button. Click it before you make an offer and get a written answer on your equity that you can show the seller."}, {"key": "button", "label": "The new button", "pill": "<b>For SourceCo marketplace members</b>", "h1": "There is a new button on every deal memo. <span class=\"gold\">Use it before you bid.</span>", "lede": "Equity Pre-Check: a first answer in [1 business day], then a written view of how much equity is likely, what has to be true and when we would decide."}], "flow": {"steps": [{"q": "Which deal?", "sub": "If you came from a memo, the code is already filled in.", "groups": [{"key": "Bid timing", "label": "When do you plan to bid?", "opts": ["This week", "In 2 to 4 weeks", "Next month", "Not sure yet"]}, {"key": "Equity needed", "label": "Equity you expect to need", "opts": ["Under $500K", "$500K to $1M", "$1M to $2.5M", "Over $2.5M"]}, {"key": "Lead", "label": "Anyone leading the equity yet?", "opts": ["Yes, committed", "Yes, not final", "No lead yet", "I will lead"]}], "fields": [["Deal code", "text", 0, "SC-2025-00", true]]}, {"q": "Where should we reply?", "sub": "Use the email on your marketplace account so we can match it.", "fields": [["First name", "text", 1], ["Last name", "text", 1], ["Firm", "text", 0], ["Email", "email", 1], ["Mobile", "tel", 1]]}], "cta": "Request my Pre-Check", "fine": "Free for members. The seller is not told you asked.", "done": {"title": "Pre-Check requested.", "text": "You will get a first answer within [1 business day]. The written Pre-Check follows a short call. It is not a promise to fund.", "next": ["What to have ready", "Your track record, your own check in the deal, and how you would structure it. We already have the company's data from the memo."], "link": ["See what happens next", "thanks-sponsors.html?path=precheck"]}, "branches": {}}, "faq": [["Does it cost anything?", "[No. Free for members, and no fee at closing.]"], ["Will the seller know I asked?", "No. The seller sees a Pre-Check only if you share it."], ["Does asking change how SourceCo treats my bid?", "It should not, and we will say so in writing."], ["Can I use it on more than one deal?", "Yes. Each deal gets its own Pre-Check, because each deal has its own conditions."], ["I already have a lead investor. Is it still useful?", "Often more so. It can fill the rest of the gap, and the written view helps when the seller asks where all your money is coming from."], ["Is it a promise to fund?", "No. It states what we checked and what still has to be true. Investors decide after they review the signed deal."]]};</script>
 <script>(function () {
   var CFG = window.PAGE || {};
   function $(id) { return document.getElementById(id); }
