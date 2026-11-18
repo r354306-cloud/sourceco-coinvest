@@ -1062,6 +1062,12 @@
   .card.wl-side.dk:has(> .badge) { background: #15120f; box-shadow: 0 30px 60px -36px rgba(20,16,12,.55); }
   .card.wl-side:has(> .badge.yel):not(.dk) { background: linear-gradient(180deg, #fffaf0, #fbf3e1); }
   .wl-side .badge { align-self: flex-start; }
+  .wlbar { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 10px 18px; background: #14110e; color: #c9c1b6; font-size: 14px; text-decoration: none; position: relative; z-index: 60; }
+  .wlbar b { color: #fff; font-weight: 600; }
+  .wlbar .d { width: 7px; height: 7px; border-radius: 50%; background: #e2c57c; box-shadow: 0 0 0 4px rgba(226,197,124,.18); flex: none; }
+  .wlbar .go { color: #e2c57c; font-weight: 600; white-space: nowrap; }
+  .wlbar:hover .go { text-decoration: underline; }
+  @media (max-width: 640px) { .wlbar { font-size: 13px; gap: 8px; } .wlbar .h { display: none; } }
 </style>
 
 <style>
@@ -1143,6 +1149,66 @@
   .d-files a span { font-weight: 400; font-size: 14px; color: var(--ink-400); }
   .d-jump { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
   .d-jump a { font-size: 14.5px; padding: 8px 14px; border-radius: 999px; background: #fff; box-shadow: var(--card-shadow); text-decoration: none; }
+  .h-hero { position: relative; overflow: hidden; background: #14110e; color: #f4efe7; }
+  .h-hero::before { content: ""; position: absolute; right: -200px; top: -240px; width: 860px; height: 860px; border-radius: 50%; background: radial-gradient(closest-side, rgba(203,161,77,.25), transparent); }
+  .h-hero .wrap { position: relative; }
+  .h-in { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; padding: 64px 0 40px; }
+  .h-eb { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #e2c57c; font-weight: 600; }
+  .h-hero h1 { color: #fff; margin-top: 14px; font-size: clamp(38px, 4.8vw, 58px); line-height: 1.03; letter-spacing: -0.045em; }
+  .h-g { background: linear-gradient(95deg, #c99a43, #ecd08e 55%, #c99a43); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .h-hero p { color: #c9c1b6; font-size: 18px; margin-top: 18px; max-width: 34em; line-height: 1.55; }
+  .h-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+  .h-b1 { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; padding: 14px 20px; border-radius: 13px; text-decoration: none; color: #1d1913; background: linear-gradient(180deg, #e2c57c, #cba14d); }
+  .h-b2 { display: inline-flex; align-items: center; font-weight: 600; padding: 14px 20px; border-radius: 13px; text-decoration: none; color: #fff; box-shadow: inset 0 0 0 1px rgba(255,255,255,.28); }
+  .h-fun { border-radius: 24px; padding: 22px; background: linear-gradient(180deg, #1d1915, #15120f); box-shadow: inset 0 0 0 1px rgba(255,255,255,.07), 0 40px 80px -40px rgba(0,0,0,.9); }
+  .h-fun .lb { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #9d9487; font-weight: 600; margin: 2px 4px 10px; }
+  .h-src { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+  .h-src a { display: block; padding: 14px 12px; border-radius: 14px; background: #221e19; box-shadow: inset 0 0 0 1px rgba(255,255,255,.07); text-decoration: none; }
+  .h-src a:hover { box-shadow: inset 0 0 0 1px rgba(226,197,124,.45); }
+  .h-src b { display: block; color: #fff; font-size: 24px; font-weight: 700; letter-spacing: -0.03em; }
+  .h-src span { display: block; color: #9d9487; font-size: 12.5px; margin-top: 2px; }
+  .h-arrow { width: 2px; height: 22px; margin: 6px auto; background: linear-gradient(#cba14d, rgba(203,161,77,.2)); }
+  .h-wl { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 16px; background: rgba(226,197,124,.1); box-shadow: inset 0 0 0 1px rgba(226,197,124,.45); text-decoration: none; }
+  .h-wl img { width: 30px; height: 30px; }
+  .h-wl b { display: block; color: #fff; font-size: 17px; }
+  .h-wl span { display: block; color: #e2c57c; font-size: 13px; }
+  .h-wl em { margin-left: auto; font-style: normal; font-weight: 700; font-size: 13px; color: #1d1913; background: linear-gradient(180deg, #e2c57c, #cba14d); padding: 8px 12px; border-radius: 9px; white-space: nowrap; }
+  .h-sub { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .h-sub a { display: block; padding: 12px; border-radius: 12px; background: #221e19; box-shadow: inset 0 0 0 1px rgba(255,255,255,.07); text-decoration: none; color: #efe8dd; font-size: 13.5px; font-weight: 600; }
+  .h-sub a span { display: block; color: #9d9487; font-weight: 400; font-size: 12px; margin-top: 2px; }
+  .h-stats { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 26px 0 40px; border-top: 1px solid rgba(255,255,255,.09); }
+  .h-stats > div { padding: 0 20px; border-left: 1px solid rgba(255,255,255,.09); }
+  .h-stats > div:first-child { padding-left: 0; border-left: 0; }
+  .h-stats b { display: block; color: #fff; font-size: 26px; font-weight: 700; letter-spacing: -0.03em; }
+  .h-stats span { display: block; color: #9d9487; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; margin-top: 4px; }
+  .h-feat { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); border-radius: 24px; overflow: hidden; background: #fff; box-shadow: var(--card-shadow); text-decoration: none; color: inherit; }
+  .h-feat img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; min-height: 300px; border-right: 1px solid var(--line); }
+  .h-feat .tx { padding: 34px; display: flex; flex-direction: column; justify-content: center; }
+  .h-feat .tg2 { align-self: flex-start; font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--gold-700); background: var(--gold-soft); padding: 5px 10px; border-radius: 7px; }
+  .h-feat h3 { font-size: 26px; letter-spacing: -0.025em; margin-top: 14px; }
+  .h-feat p { margin-top: 10px; font-size: 16px; }
+  .h-feat ul { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; }
+  .h-feat li { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; color: var(--ink-600); }
+  .h-feat .gob { margin-top: 24px; align-self: flex-start; font-weight: 700; padding: 13px 18px; border-radius: 12px; background: #1d1913; color: #fff; }
+  .d-thumbs.h8 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .h-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+  .h-two .d-sh { margin-bottom: 16px; }
+  @media (max-width: 1000px) {
+    .h-in, .h-feat, .h-two { grid-template-columns: minmax(0, 1fr); }
+    .h-in { padding-top: 40px; gap: 34px; }
+    .h-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 20px; }
+    .h-stats > div:nth-child(4) { padding-left: 0; border-left: 0; }
+    .h-feat img { border-right: 0; border-bottom: 1px solid var(--line); min-height: 0; aspect-ratio: 16 / 10; }
+    .d-thumbs.h8 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 640px) {
+    .h-src { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .h-sub { grid-template-columns: minmax(0, 1fr); }
+    .h-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .h-stats > div:nth-child(4) { padding-left: 20px; border-left: 1px solid rgba(255,255,255,.09); }
+    .h-stats > div:nth-child(odd) { padding-left: 0; border-left: 0; }
+    .h-feat .tx { padding: 24px; }
+  }
   footer.d-sf { border-top: 1px solid var(--line); padding: 30px 0 46px; font-size: 14px; color: var(--ink-400); }
   @media (max-width: 900px) {
     .d-thumbs { grid-template-columns: repeat(3, 1fr); }
@@ -1167,11 +1233,21 @@
 <body>
 <div class="snav"><div class="wrap in">
   <a class="brand" href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAIb0lEQVR42u1dQWgUZxT+3rCHRG+ZLT0kpR68KD1JYg6l9WBAIu4oUmzjoRZzMMEJCm3SntqbtaZ4yUDTQ4ReUhApcRYMggEtvWQTSgtiesghgjl1/1xaXNvL62H/rWvcnZ2Z/5+Zf3fzIIdsdjcz7/3/+9/73vfe0Imrp2C6FN18D4jPM+MzAAcA9Mo/DRGon8FL8vcKgIdEuAOmxYJXfmH6vZGpBihO2TYzfgfQH/C23QZoJBUCjRW88l0T79My8aJ8137CjHIL5YeVXgYv+a79zHftQdPuNWeY4u8BGE3o6/sBrPmuDSKMF+bErb0d8KryOUHlvyLMWChO2Rf3DFBV/KBUfqrCjAXftVe72gC+az8DsJbhJRzNwvhGGEAqvx/muL/uMYCMRoxQ/stcw/68KwwgD781GCYMXPdd+0bHG4AZCwYnptMdbQB/yl40H/ZI1xVZKe/zMdMNwMD1jjSA79pP0Cbiu/bxTtwBh9A+MtdRBvCn7LfbSPkg4IdO2wFfa/6+ZVSh6McA7gMYka/pkKGCJ75BR6Gh+g7fIccT6w1eX5E/cRHVHQL1Z1HAyaVQzTrNUM/0HU9QyPedLLr5HgZXwuwkAp3NsnKWuAti4g81uZzQIhW6EejnCeOOJ05mXbbMpeB+Tih+w4bjiZMxdszhhiAb4YAzJ56iiypifUoRCeE9hY/vyP+/7XhiAHs14ehSmBNC4eOrAOZNVb5xNWHdEsd17RkAmdFgLjLjEoCjId5eAnC5SUhsFi9ItdpEoN6kIpWim+8B+IoiADfreGIm1R0gV8ssgNuOJyZbvL2Cl0y2OGHsLQDntUMjjC0d+QmAad+1p+NGWJF2gO/a3wGYCJmd1j6zGnJbB+2CMzqYbTXFJ+zNdkA4EtYQVthCinQlEw3+vNZCedfUUwleqroLRVeYvPKrYTdjS0Ii6gbwXftGKywnUDnEv+jJ53hHQfkC6ctomOpaoAuKcIBWHE/sa1GM0VUP2Abh3TBbPCWXo4RjWZqil97ilG0H+KFRrRzP6hbnoDpD0c33mKD8Vrq0AkhTUdkOTX1eFtiListKkI7T2gDSb8UhTR1t4fNKKbMvek0yADMWGrFCrN3KV0lKgj7reGI4NYq7qewLxtjugMXSTcloUf9Nwy2MAibTXvhRQwNoo2IEHHyOJ+xuJ35VXfXLXVC/Ax5oJt82zWq7mfgld8HmKwZIoFtkKaBceBfAfJdTX/pr12slRJjtD3IHEsAraV5Wv6KdRF5vEvWAUJmq44lhHUBd3fnVB33MrIaopmqUiAalWvp385OwFI4wUooabvpT9mJs3y0VpbO7Mgz9RVdHjeMJsgC+omfRUG+cWN+ZE+dRZbZlHXouR+AeETRlxxYDF6CFzhe/auV4YkXe1CzapH5MhLyG7PiShersBdWLX9ekhJlEw9Tm2/dHxGNrqPJRD1oaMJNlnbooeOW7jieIQL1hIiXVQk2dG4zjds+qHsQ5DatnMolFKV3a8K5I51P5Wl9dwWc/MmoyLXjlF76rltzTP5sXBk1wP3EYDe0wjqaV5AjUr6iIx3EVoTK9RDIa1otuvoeJ3yTgb0UWXSb4U67FrJ0w0cA4gLiTR9bUo1/eX6WYALvcwQaAjxPfoYr4k6UhlPrAUOzmkBxPw0U3f9rU1isLVeJU+kmQOnazE4XW4rs2h6WKRLiHDdV7sAA81DRoKerKUcVubsdZLNIQqxruWSiH8IT7FhHuQAsHJlw8rpGtcEdxTM09xXpHn4ZuzAd04uopneNaAsE4ySld0AmayeF+5ZhfUyHCW2GjJ9l79pMu4I9AvbmEBiBtA1gkwh9gvMHAMQCjnOloJDQe6Mco+1N2IKm2tnBYc8ZX8MovrLqQDZoH5E1XLxrXEyiU6y7mbLXAfW4lQuKthaGKfVhIHzujYwnQWUSqRke1edGqIXsyoWoHqSQEQfT5rv08JV5TqZYgWglvsyRWf5LMh2COq3rOVLuJc80y4XnD9T+b9AjioIiKQDrqzpX6A99qwFaowNyuxxmkNSy8GUQeo3izS94PxIKCeP4ZywgMYFbHLd7Udf2vtwbjSL1Mqbtk6HhiJc38oAXTO07tet7xxGGEQUOlj9owRP0lxVUXl+n9lU5X2Kyb1AoadmGAEVryjApzQjieoARYFa2Ato0I7VsUqx7geOJwhu5oNmrs7XhiRt5sKWm8v5E7QeMBU/uUCjLOnHiaAVVkRCXi0ZY0MS6HqAZGne6lvVFbp2gbK6OIkoa+nteQ5Ijd8lbUg0Ru8WXNil+WfnxA85ibigZQMUxNfJYIeccTFLUhMReXxiex8UdQYzcvA/gyscI5YSnppg1VCCenkTg1COAcqoM1+hpEETsg3AfjJoEep8LpYdwEzO6ayWmECdYBrAOYgTkJ3J9gGC2W4TOcB5W4n4yDwN7ErFgj5P/vRCFWIX5d2zNA9EFQC/z6Ax/iGkC1/anSFS6oOGXbvms/b8aYiMO/1MSG2+r0x1gdl4ovB2IvjLEojeQyRF5SvT4ifNuRD/OUIetaTEh3MsSDIg6l1bDXdmeA4vPDJnzXntg9Q06u+HcA/GzalBRjDKBzZUqyLQh0hol/Y+YkfPVGp+UBf6G9uEdHOssAdVSMNpBSWu1PqRnApJHxqdUTDAxDR9pA//MdiwWlzGyIe42TnQ7GmbwLRjoeDZW7YMi4qKda0VrpCjha1g4qRkU9GfQYZ4oFGUSBLKUZ9RgFxlWHcuCLjN3OMLq5IiYfG1jK4F8PZeV2jKsHOJ4Ylgy87RRW/bikwKxjryL2WqY8IJHNTcRHTJWYal1fE5YYzIBktt2DWlmxAsJSFuzqtn+MlfTPw/VEWWJ8JHuOh3d1qlfkzyYRvmdgpV2wp/8A12LBdi9BkwUAAAAASUVORK5CYII=" alt="">SourceCo <span style="color:var(--ink-400);font-weight:500">Co-Invest</span></a>
-  <div class="lk"><a href="index.html#pages">Landing pages</a><a href="index.html#headlines">Headlines</a><a href="index.html#guides">Guides</a><a href="image-ads.html">Image ads</a><a href="linkedin-posts.html" class=d-on>LinkedIn posts</a><a href="emails.html">Emails</a><a href="search-ads.html">Search ads</a><a href="index.html#downloads">Downloads</a></div>
+  <div class="lk"><a href="waitlist.html">Waitlist</a><a href="index.html#pages">Landing pages</a><a href="index.html#headlines">Headlines</a><a href="index.html#guides">Guides</a><a href="image-ads.html">Image ads</a><a href="linkedin-posts.html" class=d-on>LinkedIn posts</a><a href="emails.html">Emails</a><a href="search-ads.html">Search ads</a><a href="index.html#downloads">Downloads</a></div>
 </div></div>
+
 <main class="wrap">
-<div class="d-top"><div class="eyebrow">LinkedIn posts</div><h1>12 posts for Tomos</h1></div>
-<section class="d-sec" style="border-top:0;padding-top:12px"><div class="d-post"><div class="d-tx"><div class="d-d">Mon, Nov 23</div><h3>The week after the seller says yes</h3><div class="d-bd">The worst week to raise equity is the week after the seller says yes.
+<div class="d-top"><div class="eyebrow">LinkedIn posts</div><h1>13 posts for Tomos</h1></div>
+<section class="d-sec" style="border-top:0;padding-top:12px"><div class="d-post"><div class="d-tx"><div class="d-d">Mon, Nov 23</div><h3>Co-Invest opens by invitation</h3><div class="d-bd">We are opening something new at SourceCo, and our own community gets in first.
+
+SourceCo Co-Invest brings independent sponsors and investors together, one deal at a time.
+
+If you buy companies: know where your equity is coming from before you make an offer.
+If you invest: back founder-owned companies next to the person running them.
+
+It is invite only for now. The waitlist takes about a minute.
+
+Link in the comments.</div></div><div class="d-im"><img src="ads/sq/21-waitlist-open.png" alt="" loading="lazy"><a href="ads/sq/21-waitlist-open.png" download>Download image</a></div></div><div class="d-post"><div class="d-tx"><div class="d-d">Tue, Nov 24</div><h3>The week after the seller says yes</h3><div class="d-bd">The worst week to raise equity is the week after the seller says yes.
 
 You have 60 to 90 days to close. The bank, the accountants, the lawyers and the seller all want your time. And you are on the phone with the fortieth family office, explaining the same deal again.
 
@@ -1179,7 +1255,7 @@ I did this as an independent sponsor. It is the part of the job nobody warns you
 
 So at SourceCo we are moving the equity conversation earlier. Every deal on our marketplace can now get an Equity Pre-Check before you bid: a check of you and the deal, how much equity is likely, what has to be true, and a decision date for after you sign.
 
-Sellers get a bid they can believe. You get your 90 days back. Link in the comments.</div></div><div class="d-im"><img src="ads/sq/15-rip.png" alt="" loading="lazy"><a href="ads/sq/15-rip.png" download>Download image</a></div></div><div class="d-post"><div class="d-tx"><div class="d-d">Tue, Nov 24</div><h3>312 dials</h3><div class="d-bd">312.
+Sellers get a bid they can believe. You get your 90 days back. Link in the comments.</div></div><div class="d-im"><img src="ads/sq/15-rip.png" alt="" loading="lazy"><a href="ads/sq/15-rip.png" download>Download image</a></div></div><div class="d-post"><div class="d-tx"><div class="d-d">Wed, Nov 25</div><h3>312 dials</h3><div class="d-bd">312.
 
 That is how many cold dials it takes our team to get one meeting with a business owner who is not for sale. We measured it across more than 22,000 calls.
 
@@ -1277,6 +1353,6 @@ What we are changing next: [one change].
 
 If you are bidding on anything in the next month, the link is in the comments.</div></div></div></section>
 </main>
-<footer class="sf"><div class="wrap">SourceCo Co-Invest &middot; Launch deliverables &middot; November 2026</div></footer>
+<footer class="sf"><div class="wrap">SourceCo Co-Invest &middot; Launch kit &middot; November 2026</div></footer>
 </body>
 </html>
