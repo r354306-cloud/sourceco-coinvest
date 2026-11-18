@@ -1047,6 +1047,21 @@
   .tg-mnote { display: none; }
   @media (max-width: 1000px) { .tg-mnote { display: block; grid-column: 1 / -1; font-size: 13px; color: #b9b0a3; margin-top: 2px; } }
   @media (max-width: 640px) { .tg-bar.gd { font-size: 0; padding: 0; } }
+  .wl-side { padding: 32px; display: flex; flex-direction: column; }
+  .wl-side h3 { margin-top: 16px; font-size: 21px; }
+  .wl-side .checks { margin-top: 16px; flex: 1; }
+  .wl-link { margin-top: 22px; font-weight: 600; color: var(--gold-700); text-decoration: none; }
+  .wl-side.dk { background: #15120f; color: #f1ebe2; box-shadow: 0 30px 60px -36px rgba(20,16,12,.55); }
+  .wl-side.dk h3 { color: #fff; }
+  .wl-side.dk .checks li { color: #c9c1b6; }
+  .wl-side.dk .ck { background: #c99a43; }
+  .wl-side.dk .badge.yel { background: rgba(226,197,124,.16); color: #e2c57c; }
+  .wl-side.dk .wl-link { color: #e2c57c; }
+  .wl-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 40px; }
+  @media (max-width: 640px) { .wl-facts { grid-template-columns: minmax(0, 1fr); } }
+  .card.wl-side.dk:has(> .badge) { background: #15120f; box-shadow: 0 30px 60px -36px rgba(20,16,12,.55); }
+  .card.wl-side:has(> .badge.yel):not(.dk) { background: linear-gradient(180deg, #fffaf0, #fbf3e1); }
+  .wl-side .badge { align-self: flex-start; }
 </style>
 
 <style>
@@ -1155,8 +1170,18 @@
   <div class="lk"><a href="index.html#pages">Landing pages</a><a href="index.html#headlines">Headlines</a><a href="index.html#guides">Guides</a><a href="image-ads.html">Image ads</a><a href="linkedin-posts.html">LinkedIn posts</a><a href="emails.html" class=d-on>Emails</a><a href="search-ads.html">Search ads</a><a href="index.html#downloads">Downloads</a></div>
 </div></div>
 <main class="wrap">
-<div class="d-top"><div class="eyebrow">Emails</div><h1>7 emails</h1></div>
-<section class="d-sec" style="border-top:0;padding-top:12px"><div class="d-mail" id="e1"><div class="d-hd"><h3>1. Launch to marketplace sponsors</h3><div class="d-meta"><span>When</span><span>Week of Nov 23</span><span>From</span><span>Tomos</span><span>Subject</span><b>Know your equity before you bid</b></div></div><div class="d-bd">Hi [first name],
+<div class="d-top"><div class="eyebrow">Emails</div><h1>8 emails</h1></div>
+<section class="d-sec" style="border-top:0;padding-top:12px"><div class="d-mail" id="e1"><div class="d-hd"><h3>1. Waitlist invite to current SourceCo users</h3><div class="d-meta"><span>When</span><span>Launch week</span><span>From</span><span>Tomos</span><span>Subject</span><b>You&#x27;re invited: the SourceCo Co-Invest waitlist</b></div></div><div class="d-bd">Hi [first name],
+
+We&#x27;re opening something new to the SourceCo community first.
+
+SourceCo Co-Invest brings independent sponsors and investors together, one deal at a time. Sponsors get a free Equity Pre-Check before they make an offer. Investors get early access, by invitation.
+
+The waitlist takes about a minute: [link]
+
+Bidding on a marketplace deal right now? You don&#x27;t need to wait. Reply to this email and we&#x27;ll start your Pre-Check.
+
+Tomos</div></div><div class="d-mail" id="e2"><div class="d-hd"><h3>2. Launch to marketplace sponsors</h3><div class="d-meta"><span>When</span><span>Week of Nov 23</span><span>From</span><span>Tomos</span><span>Subject</span><b>Know your equity before you bid</b></div></div><div class="d-bd">Hi [first name],
 
 Quick one. Starting this week, any deal on the marketplace can get an Equity Pre-Check before you bid.
 
@@ -1171,7 +1196,7 @@ It is not a promise to fund. Investors still decide after their own review. But 
 
 I raised equity deal by deal as a sponsor, so I know what those 90 days feel like. If you are looking at anything on the marketplace right now, reply to this email or start here: [link]
 
-Tomos</div></div><div class="d-mail" id="e2"><div class="d-hd"><h3>2. Pre-Check request confirmation</h3><div class="d-meta"><span>When</span><span>Right after the form</span><span>From</span><span>Tomos or Dan</span><span>Subject</span><b>Got your Pre-Check request for [deal code]</b></div></div><div class="d-bd">Hi [first name],
+Tomos</div></div><div class="d-mail" id="e3"><div class="d-hd"><h3>3. Pre-Check request confirmation</h3><div class="d-meta"><span>When</span><span>Right after the form</span><span>From</span><span>Tomos or Dan</span><span>Subject</span><b>Got your Pre-Check request for [deal code]</b></div></div><div class="d-bd">Hi [first name],
 
 Thanks for asking for an Equity Pre-Check on [deal code]. A person on our deal team has it.
 
@@ -1184,7 +1209,7 @@ To speed it up, reply with:
 
 A Pre-Check is not a promise to fund. It is a written answer on where your equity would likely come from, and what has to be true.
 
-[Tomos or Dan]</div></div><div class="d-mail" id="e3"><div class="d-hd"><h3>3. Nudge if we are waiting on them</h3><div class="d-meta"><span>When</span><span>Day 2, only if no reply</span><span>From</span><span>Deal team</span><span>Subject</span><b>Two answers and your Pre-Check is done</b></div></div><div class="d-bd">Hi [first name],
+[Tomos or Dan]</div></div><div class="d-mail" id="e4"><div class="d-hd"><h3>4. Nudge if we are waiting on them</h3><div class="d-meta"><span>When</span><span>Day 2, only if no reply</span><span>From</span><span>Deal team</span><span>Subject</span><b>Two answers and your Pre-Check is done</b></div></div><div class="d-bd">Hi [first name],
 
 Quick nudge on [deal code]. We are two answers away from your written Pre-Check:
 
@@ -1193,7 +1218,7 @@ Quick nudge on [deal code]. We are two answers away from your written Pre-Check:
 
 If the timing changed or you passed on the deal, just say so and I will close it out.
 
-[Name]</div></div><div class="d-mail" id="e4"><div class="d-hd"><h3>4. The Pre-Check itself</h3><div class="d-meta"><span>When</span><span>After the short call</span><span>From</span><span>Tomos or Dan</span><span>Subject</span><b>Your Equity Pre-Check: [deal code]</b></div></div><div class="d-bd">Hi [first name],
+[Name]</div></div><div class="d-mail" id="e5"><div class="d-hd"><h3>5. The Pre-Check itself</h3><div class="d-meta"><span>When</span><span>After the short call</span><span>From</span><span>Tomos or Dan</span><span>Subject</span><b>Your Equity Pre-Check: [deal code]</b></div></div><div class="d-bd">Hi [first name],
 
 Your Equity Pre-Check for [deal code] is attached. The short version:
 
@@ -1209,7 +1234,7 @@ It is not a promise to fund. Investors decide after they review the signed deal,
 
 Good luck with the bid.
 
-[Tomos or Dan]</div></div><div class="d-mail" id="e5"><div class="d-hd"><h3>5. After they sign the offer</h3><div class="d-meta"><span>When</span><span>When the offer is signed</span><span>From</span><span>Deal team</span><span>Subject</span><b>You signed. Here is your decision date.</b></div></div><div class="d-bd">Hi [first name],
+[Tomos or Dan]</div></div><div class="d-mail" id="e6"><div class="d-hd"><h3>6. After they sign the offer</h3><div class="d-meta"><span>When</span><span>When the offer is signed</span><span>From</span><span>Deal team</span><span>Subject</span><b>You signed. Here is your decision date.</b></div></div><div class="d-bd">Hi [first name],
 
 Congrats on signing [deal code]. Your decision date from the Pre-Check is [date].
 
@@ -1220,7 +1245,7 @@ Between now and then we need:
 
 Once those are in, the deal goes to review. If it is a yes, the deal room opens, and you approve every page before an investor sees it.
 
-[Name]</div></div><div class="d-mail" id="e6"><div class="d-hd"><h3>6. One question, for sponsors who did not reply</h3><div class="d-meta"><span>When</span><span>Two weeks after launch</span><span>From</span><span>Tomos</span><span>Subject</span><b>One question</b></div></div><div class="d-bd">Hi [first name],
+[Name]</div></div><div class="d-mail" id="e7"><div class="d-hd"><h3>7. One question, for sponsors who did not reply</h3><div class="d-meta"><span>When</span><span>Two weeks after launch</span><span>From</span><span>Tomos</span><span>Subject</span><b>One question</b></div></div><div class="d-bd">Hi [first name],
 
 Are you looking at any deals right now where the equity is not fully spoken for?
 
@@ -1228,7 +1253,7 @@ If yes, reply with the deal code or a one-line description and I will tell you w
 
 If not, no worries. I will stay out of your inbox.
 
-Tomos</div></div><div class="d-mail" id="e7"><div class="d-hd"><h3>7. To sell-side bankers and brokers</h3><div class="d-meta"><span>When</span><span>Week of Nov 30</span><span>From</span><span>Tomos</span><span>Subject</span><b>If a sponsor bids on your client</b></div></div><div class="d-bd">Hi [first name],
+Tomos</div></div><div class="d-mail" id="e8"><div class="d-hd"><h3>8. To sell-side bankers and brokers</h3><div class="d-meta"><span>When</span><span>Week of Nov 30</span><span>From</span><span>Tomos</span><span>Subject</span><b>If a sponsor bids on your client</b></div></div><div class="d-bd">Hi [first name],
 
 A quick one for the next time an independent sponsor bids on one of your clients.
 

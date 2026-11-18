@@ -1047,6 +1047,21 @@
   .tg-mnote { display: none; }
   @media (max-width: 1000px) { .tg-mnote { display: block; grid-column: 1 / -1; font-size: 13px; color: #b9b0a3; margin-top: 2px; } }
   @media (max-width: 640px) { .tg-bar.gd { font-size: 0; padding: 0; } }
+  .wl-side { padding: 32px; display: flex; flex-direction: column; }
+  .wl-side h3 { margin-top: 16px; font-size: 21px; }
+  .wl-side .checks { margin-top: 16px; flex: 1; }
+  .wl-link { margin-top: 22px; font-weight: 600; color: var(--gold-700); text-decoration: none; }
+  .wl-side.dk { background: #15120f; color: #f1ebe2; box-shadow: 0 30px 60px -36px rgba(20,16,12,.55); }
+  .wl-side.dk h3 { color: #fff; }
+  .wl-side.dk .checks li { color: #c9c1b6; }
+  .wl-side.dk .ck { background: #c99a43; }
+  .wl-side.dk .badge.yel { background: rgba(226,197,124,.16); color: #e2c57c; }
+  .wl-side.dk .wl-link { color: #e2c57c; }
+  .wl-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 40px; }
+  @media (max-width: 640px) { .wl-facts { grid-template-columns: minmax(0, 1fr); } }
+  .card.wl-side.dk:has(> .badge) { background: #15120f; box-shadow: 0 30px 60px -36px rgba(20,16,12,.55); }
+  .card.wl-side:has(> .badge.yel):not(.dk) { background: linear-gradient(180deg, #fffaf0, #fbf3e1); }
+  .wl-side .badge { align-self: flex-start; }
 </style>
 
 <style>
