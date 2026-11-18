@@ -1,5 +1,16 @@
 order,name,when,from,subject,body
-1,Launch to marketplace sponsors,Week of Nov 23,Tomos,Know your equity before you bid,"Hi [first name],
+1,Waitlist invite to current SourceCo users,Launch week,Tomos,You're invited: the SourceCo Co-Invest waitlist,"Hi [first name],
+
+We're opening something new to the SourceCo community first.
+
+SourceCo Co-Invest brings independent sponsors and investors together, one deal at a time. Sponsors get a free Equity Pre-Check before they make an offer. Investors get early access, by invitation.
+
+The waitlist takes about a minute: [link]
+
+Bidding on a marketplace deal right now? You don't need to wait. Reply to this email and we'll start your Pre-Check.
+
+Tomos"
+2,Launch to marketplace sponsors,Week of Nov 23,Tomos,Know your equity before you bid,"Hi [first name],
 
 Quick one. Starting this week, any deal on the marketplace can get an Equity Pre-Check before you bid.
 
@@ -15,7 +26,7 @@ It is not a promise to fund. Investors still decide after their own review. But 
 I raised equity deal by deal as a sponsor, so I know what those 90 days feel like. If you are looking at anything on the marketplace right now, reply to this email or start here: [link]
 
 Tomos"
-2,Pre-Check request confirmation,Right after the form,Tomos or Dan,Got your Pre-Check request for [deal code],"Hi [first name],
+3,Pre-Check request confirmation,Right after the form,Tomos or Dan,Got your Pre-Check request for [deal code],"Hi [first name],
 
 Thanks for asking for an Equity Pre-Check on [deal code]. A person on our deal team has it.
 
@@ -29,7 +40,7 @@ To speed it up, reply with:
 A Pre-Check is not a promise to fund. It is a written answer on where your equity would likely come from, and what has to be true.
 
 [Tomos or Dan]"
-3,Nudge if we are waiting on them,"Day 2, only if no reply",Deal team,Two answers and your Pre-Check is done,"Hi [first name],
+4,Nudge if we are waiting on them,"Day 2, only if no reply",Deal team,Two answers and your Pre-Check is done,"Hi [first name],
 
 Quick nudge on [deal code]. We are two answers away from your written Pre-Check:
 
@@ -39,7 +50,7 @@ Quick nudge on [deal code]. We are two answers away from your written Pre-Check:
 If the timing changed or you passed on the deal, just say so and I will close it out.
 
 [Name]"
-4,The Pre-Check itself,After the short call,Tomos or Dan,Your Equity Pre-Check: [deal code],"Hi [first name],
+5,The Pre-Check itself,After the short call,Tomos or Dan,Your Equity Pre-Check: [deal code],"Hi [first name],
 
 Your Equity Pre-Check for [deal code] is attached. The short version:
 
@@ -56,7 +67,7 @@ It is not a promise to fund. Investors decide after they review the signed deal,
 Good luck with the bid.
 
 [Tomos or Dan]"
-5,After they sign the offer,When the offer is signed,Deal team,You signed. Here is your decision date.,"Hi [first name],
+6,After they sign the offer,When the offer is signed,Deal team,You signed. Here is your decision date.,"Hi [first name],
 
 Congrats on signing [deal code]. Your decision date from the Pre-Check is [date].
 
@@ -68,7 +79,7 @@ Between now and then we need:
 Once those are in, the deal goes to review. If it is a yes, the deal room opens, and you approve every page before an investor sees it.
 
 [Name]"
-6,"One question, for sponsors who did not reply",Two weeks after launch,Tomos,One question,"Hi [first name],
+7,"One question, for sponsors who did not reply",Two weeks after launch,Tomos,One question,"Hi [first name],
 
 Are you looking at any deals right now where the equity is not fully spoken for?
 
@@ -77,7 +88,7 @@ If yes, reply with the deal code or a one-line description and I will tell you w
 If not, no worries. I will stay out of your inbox.
 
 Tomos"
-7,To sell-side bankers and brokers,Week of Nov 30,Tomos,If a sponsor bids on your client,"Hi [first name],
+8,To sell-side bankers and brokers,Week of Nov 30,Tomos,If a sponsor bids on your client,"Hi [first name],
 
 A quick one for the next time an independent sponsor bids on one of your clients.
 
