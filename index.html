@@ -1209,6 +1209,101 @@
     .h-stats > div:nth-child(odd) { padding-left: 0; border-left: 0; }
     .h-feat .tx { padding: 24px; }
   }
+  /* ads with copy */
+  .a-note { max-width: 62ch; }
+  .a-card { display: grid; grid-template-columns: 336px minmax(0, 1fr); background: #fff; border-radius: 18px; box-shadow: var(--card-shadow); overflow: hidden; }
+  .a-card + .a-card { margin-top: 22px; }
+  .a-feed { background: var(--cream-2); border-right: 1px solid var(--line); padding: 22px; }
+  .a-post { background: #fff; border-radius: 12px; box-shadow: 0 0 0 1px var(--line), 0 10px 24px -18px rgba(34,31,28,.5); overflow: hidden; }
+  .a-hd { display: flex; align-items: center; gap: 10px; padding: 12px 14px 8px; }
+  .a-hd img { width: 34px; height: 34px; border-radius: 8px; background: #1f1b17; padding: 6px; }
+  .a-hd b { display: block; font-size: 14px; line-height: 1.2; }
+  .a-hd span { display: block; font-size: 12px; color: var(--ink-400); line-height: 1.3; }
+  .a-pt { padding: 0 14px 10px; font-size: 13.5px; line-height: 1.45; color: var(--ink-700); }
+  .a-pt i { font-style: normal; color: var(--ink-400); white-space: nowrap; }
+  .a-post > img { width: 100%; display: block; aspect-ratio: 1 / 1; }
+  .a-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 14px; background: #f4f2ee; }
+  .a-bar b { display: block; font-size: 13.5px; line-height: 1.3; }
+  .a-bar span { display: block; font-size: 12px; color: var(--ink-400); }
+  .a-bar em { font-style: normal; font-size: 13px; font-weight: 600; white-space: nowrap; border: 1.5px solid var(--ink-600); border-radius: 999px; padding: 5px 13px; color: var(--ink-700); }
+  .a-tx { padding: 26px 30px; min-width: 0; align-self: center; }
+  .a-tx h3 { font-size: 20px; margin-top: 12px; }
+  .a-meta { display: flex; gap: 8px; flex-wrap: wrap; }
+  .a-chip { font-size: 11.5px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; padding: 5px 10px; border-radius: 7px; background: var(--gold-soft); color: var(--gold-700); }
+  .a-chip.dk { background: #1d1913; color: #e2c57c; }
+  .a-f { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px 16px; margin: 18px 0 0; font-size: 15px; line-height: 1.5; }
+  .a-f dt { font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-400); font-weight: 600; padding-top: 4px; }
+  .a-f dd { margin: 0; color: var(--ink-700); min-width: 0; }
+  .a-f dd .rest { color: #a79d90; }
+  .a-f dd small { color: var(--ink-400); font-size: 12.5px; white-space: nowrap; margin-left: 4px; }
+  .a-f code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; line-height: 1.5; background: var(--cream-2); border: 1px solid var(--line); border-radius: 6px; padding: 6px 9px; word-break: break-all; display: block; }
+  .a-f a { color: var(--gold-700); font-weight: 600; text-decoration: none; }
+  .a-dl { display: flex; gap: 16px; flex-wrap: wrap; }
+  /* plan */
+  .p-three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  .p-three > div { background: #fff; border-radius: 16px; box-shadow: var(--card-shadow); padding: 24px; }
+  .p-three .k { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: #1d1913; color: #e2c57c; font-weight: 700; font-size: 14px; }
+  .p-three h3 { font-size: 19px; margin-top: 14px; }
+  .p-three p { margin-top: 8px; font-size: 15.5px; }
+  .p-ab { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+  .p-ab > div { background: #fff; border-radius: 16px; box-shadow: var(--card-shadow); overflow: hidden; }
+  .p-ab img { width: 100%; display: block; aspect-ratio: 1 / 1; }
+  .p-ab .tx { padding: 20px 22px 22px; }
+  .p-ab .tx h3 { font-size: 18px; margin-top: 10px; }
+  .p-ab .tx p { font-size: 14.5px; margin-top: 8px; }
+  .p-why { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 22px; }
+  .p-why > div { border-left: 3px solid var(--gold); padding: 2px 0 2px 18px; }
+  .p-why h4 { font-size: 16px; }
+  .p-why p { font-size: 15.5px; margin-top: 6px; }
+  .p-weeks { display: grid; gap: 16px; }
+  .p-wk { display: grid; grid-template-columns: 190px minmax(0, 1fr); background: #fff; border-radius: 16px; box-shadow: var(--card-shadow); overflow: hidden; }
+  .p-wk .hd { background: #1d1913; color: #fff; padding: 22px; }
+  .p-wk .hd span { display: block; font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: #e2c57c; font-weight: 700; }
+  .p-wk .hd em { display: block; font-style: normal; font-size: 14px; color: #a79d90; margin-top: 6px; }
+  .p-wk .hd b { display: block; font-size: 19px; margin-top: 6px; letter-spacing: -0.02em; line-height: 1.25; }
+  .p-wk dl { margin: 0; padding: 8px 24px; display: grid; grid-template-columns: 84px minmax(0, 1fr); }
+  .p-wk dt, .p-wk dd { padding: 12px 0; border-top: 1px solid var(--line); margin: 0; font-size: 15px; line-height: 1.5; }
+  .p-wk dt:first-of-type, .p-wk dt:first-of-type + dd { border-top: 0; }
+  .p-wk dt { font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-400); font-weight: 600; padding-top: 15px; }
+  .p-wk dd { color: var(--ink-700); }
+  .p-wk dd i { font-style: normal; color: var(--ink-400); }
+  .p-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; counter-reset: st; }
+  .p-steps > div { background: #fff; border-radius: 16px; box-shadow: var(--card-shadow); padding: 20px; position: relative; }
+  .p-steps > div::before { counter-increment: st; content: counter(st); display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--gold-soft); color: var(--gold-700); font-weight: 700; font-size: 13.5px; }
+  .p-steps h3 { font-size: 16.5px; margin-top: 12px; }
+  .p-steps p { font-size: 14.5px; margin-top: 6px; line-height: 1.5; }
+  .p-list { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; max-width: 70ch; }
+  .p-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 16px; color: var(--ink-600); }
+  .p-list li .ck { margin-top: 2px; }
+  table.d-list td.d-b { font-weight: 700; white-space: nowrap; }
+  table.d-list tr.tot td { background: var(--cream-2); font-weight: 700; }
+  .h-plan { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  .h-plan a { display: block; background: #fff; border-radius: 16px; box-shadow: var(--card-shadow); padding: 22px 24px; text-decoration: none; color: inherit; }
+  .h-plan a span { font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--gold-700); }
+  .h-plan a b { display: block; font-size: 18px; margin-top: 8px; letter-spacing: -0.02em; line-height: 1.3; }
+  .h-plan a p { font-size: 14.5px; margin-top: 6px; }
+  @media (max-width: 1000px) {
+    .p-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .p-three, .h-plan { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 900px) {
+    .a-card { grid-template-columns: minmax(0, 1fr); }
+    .a-feed { border-right: 0; border-bottom: 1px solid var(--line); }
+    .a-post { max-width: 420px; margin: 0 auto; }
+    .p-ab, .p-why { grid-template-columns: minmax(0, 1fr); }
+    .p-wk { grid-template-columns: minmax(0, 1fr); }
+    .p-wk .hd { padding: 16px 20px; }
+  }
+  @media (max-width: 640px) {
+    .a-tx { padding: 20px; }
+    .a-feed { padding: 16px; }
+    .a-f { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+    .a-f dt { margin-top: 12px; }
+    .p-steps { grid-template-columns: minmax(0, 1fr); }
+    .p-wk dl { grid-template-columns: minmax(0, 1fr); padding: 6px 20px 14px; }
+    .p-wk dt { border-top: 1px solid var(--line); padding: 12px 0 0; }
+    .p-wk dd { border-top: 0; padding: 2px 0 12px; }
+  }
   footer.d-sf { border-top: 1px solid var(--line); padding: 30px 0 46px; font-size: 14px; color: var(--ink-400); }
   @media (max-width: 900px) {
     .d-thumbs { grid-template-columns: repeat(3, 1fr); }
@@ -1233,7 +1328,7 @@
 <body>
 <div class="snav"><div class="wrap in">
   <a class="brand" href="index.html"><img src="data:image/png;base64,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" alt="">SourceCo <span style="color:var(--ink-400);font-weight:500">Co-Invest</span></a>
-  <div class="lk"><a href="waitlist.html">Waitlist</a><a href="index.html#pages">Landing pages</a><a href="index.html#headlines">Headlines</a><a href="index.html#guides">Guides</a><a href="image-ads.html">Image ads</a><a href="linkedin-posts.html">LinkedIn posts</a><a href="emails.html">Emails</a><a href="search-ads.html">Search ads</a><a href="index.html#downloads">Downloads</a></div>
+  <div class="lk"><a href="plan.html">Plan</a><a href="waitlist.html">Waitlist</a><a href="image-ads.html">Image ads</a><a href="linkedin-posts.html">Posts</a><a href="emails.html">Emails</a><a href="search-ads.html">Search ads</a><a href="index.html#pages">Landing pages</a><a href="index.html#guides">Guides</a><a href="index.html#downloads">Downloads</a></div>
 </div></div>
 <div class="h-hero"><div class="wrap">
   <div class="h-in">
@@ -1246,10 +1341,10 @@
     <div class="h-fun">
       <div class="lb">Where people come from</div>
       <div class="h-src">
-        <a href="image-ads.html"><b>24</b><span>Image ads</span></a>
+        <a href="image-ads.html"><b>27</b><span>Image ads</span></a>
         <a href="linkedin-posts.html"><b>13</b><span>LinkedIn posts</span></a>
         <a href="emails.html"><b>8</b><span>Emails</span></a>
-        <a href="search-ads.html"><b>3</b><span>Search campaigns</span></a>
+        <a href="search-ads.html"><b>2</b><span>Search campaigns</span></a>
       </div>
       <div class="h-arrow"></div>
       <a class="h-wl" href="waitlist.html"><img src="data:image/png;base64,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" alt=""><div><b>The Co-Invest waitlist</b><span>Sponsors and investors, one sign-up</span></div><em>Open</em></a>
@@ -1264,7 +1359,7 @@
   </div>
   <div class="h-stats">
     <div><b>4</b><span>Landing pages</span></div>
-    <div><b>72</b><span>Ad files</span></div>
+    <div><b>81</b><span>Ad files</span></div>
     <div><b>13</b><span>Posts</span></div>
     <div><b>8</b><span>Emails</span></div>
     <div><b>2</b><span>Guides</span></div>
@@ -1277,32 +1372,40 @@
 <ul><li><span class="ck"></span><span>Buyers can jump straight to a free Pre-Check</span></li><li><span class="ck"></span><span>Investors get a short intro call, with nothing offered on the page</span></li><li><span class="ck"></span><span>Tracks where each sign-up came from</span></li></ul>
 <span class="gob">Open the waitlist &rarr;</span></div></a></section>
 
-<section class="d-sec" id="ads"><div class="d-sh"><div><span class="d-n">02</span><h2>Image ads</h2><p>24 ads, each in square, vertical and landscape. The waitlist ads come first.</p></div><a class="d-more" href="image-ads.html">See all 72 &rarr;</a></div>
-<div class="d-thumbs h8"><a href="image-ads.html"><img src="ads/sq/21-waitlist-open.png" alt="Opening by invitation. Get on the list." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/22-both-sides.png" alt="Buy great companies. Back great buyers." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/23-one-minute.png" alt="One minute now. Early access later." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/24-invite-only.png" alt="Invite only. For now." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/13-bid-like-a-fund.png" alt="Bid like you have a fund. Even if you don't." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/14-banker-text.png" alt="Have the answer before they ask." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/15-rip.png" alt="Great deal. Died on day 89." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/16-notification.png" alt="The notification every sponsor wants." loading="lazy"></a></div></section>
+<section class="d-sec" id="plan"><div class="d-sh"><div><span class="d-n">02</span><h2>The 30-day plan</h2><p>What runs when, where the $1,000 goes, and how we will know it is working.</p></div><a class="d-more" href="plan.html">Open the plan &rarr;</a></div>
+<div class="h-plan">
+  <a href="plan.html#first"><span>Start with</span><b>One photo ad against one graphic ad</b><p>Same audience, same promise. The better one gets the budget.</p></a>
+  <a href="plan.html#budget"><span>Budget</span><b>$1,000, aimed at sponsors</b><p>Email and Tomos's posts go first because they are free.</p></a>
+  <a href="plan.html#measure"><span>Measure</span><b>Sign-ups, by where they came from</b><p>Every link is tagged, so we know which ad or post worked.</p></a>
+</div></section>
 
-<section class="d-sec" id="pages"><div class="d-sh"><div><span class="d-n">03</span><h2>Landing pages</h2><p>For people ready to act now. Each has a working form.</p></div></div>
+<section class="d-sec" id="ads"><div class="d-sh"><div><span class="d-n">03</span><h2>Image ads</h2><p>27 ads in three sizes, each with the text that runs with it. Photo ads and waitlist ads come first.</p></div><a class="d-more" href="image-ads.html">See all 81 &rarr;</a></div>
+<div class="d-thumbs h8"><a href="image-ads.html"><img src="ads/sq/26-photo-waitlist.jpg" alt="Buy great companies. Back great buyers." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/21-waitlist-open.png" alt="Opening by invitation. Get on the list." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/22-both-sides.png" alt="Buy great companies. Back great buyers." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/23-one-minute.png" alt="One minute now. Early access later." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/24-invite-only.png" alt="Invite only. For now." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/25-photo-offer.jpg" alt="Make an offer the seller can believe." loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/28-photo-clock.jpg" alt="Offer signed. Equity still open?" loading="lazy"></a><a href="image-ads.html"><img src="ads/sq/13-bid-like-a-fund.png" alt="Bid like you have a fund. Even if you don't." loading="lazy"></a></div></section>
+
+<section class="d-sec" id="pages"><div class="d-sh"><div><span class="d-n">04</span><h2>Landing pages</h2><p>For people ready to act now. Each has a working form.</p></div></div>
 <div class="d-grid d-g3"><a class="d-tile" href="sponsors.html"><img class="d-shot" src="img/sponsors.jpg" alt=""><div class="d-b"><h3>Independent sponsors</h3><p>For the people buying companies. Leads with the free Equity Pre-Check.</p><span class="d-go">Open page &rarr;</span></div></a><a class="d-tile" href="members.html"><img class="d-shot" src="img/members.jpg" alt=""><div class="d-b"><h3>Marketplace members</h3><p>The Pre-Check button for buyers already on the marketplace.</p><span class="d-go">Open page &rarr;</span></div></a><a class="d-tile" href="bankers.html"><img class="d-shot" src="img/bankers.jpg" alt=""><div class="d-b"><h3>Bankers and brokers</h3><p>For sell-side advisors who want to verify a sponsor's Pre-Check.</p><span class="d-go">Open page &rarr;</span></div></a></div>
 <p class="d-small">Thank-you page <a href="thanks-sponsors.html">Sponsors</a></p></section>
 
 <section class="d-sec"><div class="h-two">
-  <div id="posts"><div class="d-sh"><div><span class="d-n">04</span><h2>LinkedIn posts</h2><p>13 posts for Tomos, starting with the launch.</p></div><a class="d-more" href="linkedin-posts.html">Read them &rarr;</a></div>
+  <div id="posts"><div class="d-sh"><div><span class="d-n">05</span><h2>LinkedIn posts</h2><p>13 posts for Tomos, starting with the launch.</p></div><a class="d-more" href="linkedin-posts.html">Read them &rarr;</a></div>
   <table class="d-list"><tbody><tr><td class="d-k">Mon, Nov 23</td><td>Co-Invest opens by invitation</td></tr><tr><td class="d-k">Tue, Nov 24</td><td>The week after the seller says yes</td></tr><tr><td class="d-k">Wed, Nov 25</td><td>312 dials</td></tr><tr><td class="d-k">Mon, Nov 30</td><td>Four questions sellers ask</td></tr><tr><td class="d-k">Wed, Dec 2</td><td>Why we built the Pre-Check</td></tr><tr><td class="d-k">Fri, Dec 4</td><td>The marketplace this week</td></tr><tr><td class="d-k">Mon, Dec 7</td><td>Problems found late kill more deals than money</td></tr><tr><td class="d-k">Wed, Dec 9</td><td>Twelve yeses</td></tr><tr><td class="d-k">Fri, Dec 11</td><td>What founders remember</td></tr><tr><td class="d-k">Mon, Dec 14</td><td>A support letter is not a plan</td></tr><tr><td class="d-k">Wed, Dec 16</td><td>Ask any equity partner</td></tr><tr><td class="d-k">Fri, Dec 18</td><td>Never listed, 84 days</td></tr><tr><td class="d-k">Mon, Dec 21</td><td>30 days in</td></tr></tbody></table></div>
-  <div id="emails"><div class="d-sh"><div><span class="d-n">05</span><h2>Emails</h2><p>8 emails, starting with the waitlist invite.</p></div><a class="d-more" href="emails.html">Read them &rarr;</a></div>
+  <div id="emails"><div class="d-sh"><div><span class="d-n">06</span><h2>Emails</h2><p>8 emails, starting with the waitlist invite.</p></div><a class="d-more" href="emails.html">Read them &rarr;</a></div>
   <table class="d-list"><tbody><tr><td class="d-k">1</td><td>Waitlist invite to current SourceCo users</td><td class="d-r" style="color:var(--ink-400)">Launch week</td></tr><tr><td class="d-k">2</td><td>Launch to marketplace sponsors</td><td class="d-r" style="color:var(--ink-400)">Week of Nov 23</td></tr><tr><td class="d-k">3</td><td>Pre-Check request confirmation</td><td class="d-r" style="color:var(--ink-400)">Right after the form</td></tr><tr><td class="d-k">4</td><td>Nudge if we are waiting on them</td><td class="d-r" style="color:var(--ink-400)">Day 2, only if no reply</td></tr><tr><td class="d-k">5</td><td>The Pre-Check itself</td><td class="d-r" style="color:var(--ink-400)">After the short call</td></tr><tr><td class="d-k">6</td><td>After they sign the offer</td><td class="d-r" style="color:var(--ink-400)">When the offer is signed</td></tr><tr><td class="d-k">7</td><td>One question, for sponsors who did not reply</td><td class="d-r" style="color:var(--ink-400)">Two weeks after launch</td></tr><tr><td class="d-k">8</td><td>To sell-side bankers and brokers</td><td class="d-r" style="color:var(--ink-400)">Week of Nov 30</td></tr></tbody></table></div>
 </div></section>
 
-<section class="d-sec" id="search"><div class="d-sh"><div><span class="d-n">06</span><h2>Search ads</h2><p>Google search campaigns with headlines, descriptions and keywords.</p></div><a class="d-more" href="search-ads.html">See the ads &rarr;</a></div>
-<table class="d-list"><tbody><tr><td>Waitlist: brand and network terms</td><td class="d-r" style="color:var(--ink-400)">8 headlines, 3 descriptions</td></tr><tr><td>Sponsors: equity for a deal</td><td class="d-r" style="color:var(--ink-400)">12 headlines, 4 descriptions</td></tr><tr><td>Competitor: CapitalPad searches</td><td class="d-r" style="color:var(--ink-400)">8 headlines, 3 descriptions</td></tr></tbody></table></section>
+<section class="d-sec" id="search"><div class="d-sh"><div><span class="d-n">07</span><h2>Search ads</h2><p>Google search campaigns with headlines, descriptions and keywords.</p></div><a class="d-more" href="search-ads.html">See the ads &rarr;</a></div>
+<table class="d-list"><tbody><tr><td>Waitlist: brand and network terms</td><td class="d-r" style="color:var(--ink-400)">8 headlines, 3 descriptions</td></tr><tr><td>Sponsors: equity for a deal</td><td class="d-r" style="color:var(--ink-400)">12 headlines, 4 descriptions</td></tr></tbody></table></section>
 
-<section class="d-sec" id="guides"><div class="d-sh"><div><span class="d-n">07</span><h2>Guides</h2><p>Long-form articles written to rank in search.</p></div></div>
+<section class="d-sec" id="guides"><div class="d-sh"><div><span class="d-n">08</span><h2>Guides</h2><p>Long-form articles written to rank in search.</p></div></div>
 <div class="d-grid d-g3"><a class="d-tile" href="guide-raise-equity.html"><img class="d-shot" src="img/guide-raise-equity.jpg" alt=""><div class="d-b"><h3>How independent sponsors raise equity</h3><p>Where the money comes from, when sponsors raise it, what it costs and why deals break.</p><span class="d-go">Read guide &rarr;</span></div></a><a class="d-tile" href="guide-support-letters.html"><img class="d-shot" src="img/guide-support-letters.jpg" alt=""><div class="d-b"><h3>Equity support letters</h3><p>What a support letter is, how often sellers ask for one, and what a useful one includes.</p><span class="d-go">Read guide &rarr;</span></div></a></div></section>
 
-<section class="d-sec" id="headlines"><div class="d-sh"><div><span class="d-n">08</span><h2>Headline options</h2><p>The landing pages each have more than one headline. Click View to see it on the page.</p></div></div>
+<section class="d-sec" id="headlines"><div class="d-sh"><div><span class="d-n">09</span><h2>Headline options</h2><p>The landing pages each have more than one headline. Click View to see it on the page.</p></div></div>
 <div class="d-hlg"><div><h3>Independent sponsors</h3><table class="d-list"><tbody><tr><td class="d-k">1</td><td>Know where your equity is coming from before you make an offer.</td><td class="d-r"><a href="sponsors.html?v=precheck">View</a></td></tr><tr><td class="d-k">2</td><td>The seller will ask where your money is coming from. Have the answer.</td><td class="d-r"><a href="sponsors.html?v=seller">View</a></td></tr><tr><td class="d-k">3</td><td>You signed the offer. Now the clock is running.</td><td class="d-r"><a href="sponsors.html?v=clock">View</a></td></tr><tr><td class="d-k">4</td><td>Stop raising money with the clock running.</td><td class="d-r"><a href="sponsors.html?v=noclock">View</a></td></tr><tr><td class="d-k">5</td><td>Fill the equity gap before time runs out.</td><td class="d-r"><a href="sponsors.html?v=gap">View</a></td></tr><tr><td class="d-k">6</td><td>Sellers have seen plenty of support letters. Show them facts.</td><td class="d-r"><a href="sponsors.html?v=facts">View</a></td></tr><tr><td class="d-k">7</td><td>Equity for your deal, from a team that has sat in your seat.</td><td class="d-r"><a href="sponsors.html?v=seat">View</a></td></tr><tr><td class="d-k">8</td><td>You found the deal here. Check your equity here too.</td><td class="d-r"><a href="sponsors.html?v=member">View</a></td></tr></tbody></table></div><div><h3>Marketplace members</h3><table class="d-list"><tbody><tr><td class="d-k">1</td><td>You found the deal here. Check your equity here too.</td><td class="d-r"><a href="members.html?v=member">View</a></td></tr><tr><td class="d-k">2</td><td>There is a new button on every deal memo. Use it before you bid.</td><td class="d-r"><a href="members.html?v=button">View</a></td></tr></tbody></table></div><div><h3>Bankers and brokers</h3><table class="d-list"><tbody><tr><td class="d-k">1</td><td>When a sponsor bids on your client, ask for the Pre-Check.</td><td class="d-r"><a href="bankers.html?v=verify">View</a></td></tr><tr><td class="d-k">2</td><td>Four questions about a sponsor's money. Answered in writing.</td><td class="d-r"><a href="bankers.html?v=four">View</a></td></tr><tr><td class="d-k">3</td><td>Support letters tell you who is interested. This tells you what was checked.</td><td class="d-r"><a href="bankers.html?v=letters">View</a></td></tr></tbody></table></div></div></section>
 
-<section class="d-sec" id="downloads"><div class="d-sh"><div><span class="d-n">09</span><h2>Downloads</h2></div></div>
+<section class="d-sec" id="downloads"><div class="d-sh"><div><span class="d-n">10</span><h2>Downloads</h2></div></div>
 <ul class="d-files">
 
+  <li><a href="downloads/ad-copy.csv" download>Ad copy <span>CSV</span></a></li>
   <li><a href="downloads/linkedin-posts.csv" download>LinkedIn posts <span>CSV</span></a></li>
   <li><a href="downloads/emails.csv" download>Emails <span>CSV</span></a></li>
   <li><a href="downloads/search-ads.csv" download>Search ads <span>CSV</span></a></li>
